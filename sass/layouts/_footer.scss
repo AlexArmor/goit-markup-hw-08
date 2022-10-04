@@ -1,0 +1,48 @@
+/* Футер */
+.footer {
+  background-color: var(--footer-background-color);
+  color: var(--primary-bg-color);
+  line-height: 1.71;
+  font-style: normal;
+  text-decoration: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer .item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address {
+  padding: 0;
+  display: inline-block;
+}
+
+.footer .contacts {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--footer-contacts-color);
+  display: inline-block;
+}
+
+.info {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
+.info-title {
+  color: var(--primary-bg-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,15 @@
+.button {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  text-align: center;
+  border: 0;
+}

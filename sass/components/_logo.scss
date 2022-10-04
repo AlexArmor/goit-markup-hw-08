@@ -1,0 +1,16 @@
+/* Logo */
+.logo {
+  color: var(--logo-black-color);
+  font-family: Raleway, sans-serif;
+  font-size: var(--logo-font-size);
+  line-height: var(--logo-line-height);
+  text-decoration: none;
+}
+
+.logo--light {
+  color: var(--primary-bg-color);
+}
+
+.logo__meta {
+  color: var(--accent-color);
+}

@@ -1,0 +1,40 @@
+/* Filters-Portfolio */
+.filters-list.list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filters-list .item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.projects .button {
+  color: var(--title-text-color);
+  background-color: var(--projects-button-color);
+  font-weight: 500;
+  border-color: transparent;
+  font-family: inherit;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+}
+
+.button.special {
+  padding: 6px 25px;
+}
+
+.filters-list .button {
+  transition: background-color var(--animation-time) var(--animation-bezier),
+    color var(--animation-time) var(--animation-bezier),
+    box-shadow var(--animation-time) var(--animation-bezier);
+}
+
+.filters-list .button {
+  &:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
