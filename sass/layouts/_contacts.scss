@@ -2,6 +2,17 @@
 .contacts {
   display: flex;
   margin-left: auto;
+  column-gap: 50px;
+
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    row-gap: 10px;
+    margin-left: 94px;
+  }
 }
 
 .contacts__link {
@@ -25,6 +36,6 @@
   fill: currentColor;
 }
 
-.contacts__item {
-  margin-left: 50px;
-}
+// .contacts__item {
+//   margin-left: 50px;
+// }

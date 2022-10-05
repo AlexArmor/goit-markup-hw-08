@@ -2,9 +2,14 @@
 .page-header {
   background-color: var(--primary-bg-color);
   border-bottom: 1px solid var(--border-header-color);
+
+  @media screen and(max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
-.header {
+.header-container {
   display: flex;
   align-items: center;
 }

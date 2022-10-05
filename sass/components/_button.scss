@@ -9,7 +9,11 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   text-align: center;
   border: 0;
+
+  @media screen and(min-width: 1200px) {
+    padding: 10px 32px;
+  }
 }
