@@ -1,12 +1,21 @@
 /* Team */
 .section-team {
   background-color: var(--projects-button-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .team-member {
@@ -25,12 +34,23 @@
 }
 
 .team-list__item {
-  min-width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  &:not(:last-child) {
-    margin-right: 30px;
+
+  @media screen and(max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and(min-width: 768px) {
+      display: block;
+      min-width: 354px;
+    }
+
+    @media screen and(min-width: 1200px) {
+      min-width: 270px;
+    }
   }
 }
 

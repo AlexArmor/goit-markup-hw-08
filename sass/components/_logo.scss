@@ -5,6 +5,10 @@
   font-size: var(--logo-font-size);
   line-height: var(--logo-line-height);
   text-decoration: none;
+
+  @media screen and(max-width: 1199px) {
+    font-size: 24px;
+  }
 }
 
 .logo--light {

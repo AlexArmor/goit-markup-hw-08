@@ -14,6 +14,23 @@
   margin-bottom: 20px;
 }
 
+.footer .contacts {
+  margin-left: 0;
+}
+
+.footer .list {
+  margin-bottom: 60px;
+
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
 .footer .item {
   &:not(:last-child) {
     margin-bottom: 9px;
@@ -33,9 +50,20 @@
 }
 
 .info {
-  display: flex;
-  align-items: baseline;
-  gap: 70px;
+  @media screen and(max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+
+  @media screen and(min-width: 1200px) {
+    gap: 70px;
+  }
 }
 
 .info-title {

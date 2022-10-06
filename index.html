@@ -69,7 +69,7 @@
         </div>
       </section>
       <!-- Особливості -->
-      <!-- <section class="features">
+      <section class="features">
         <div class="container">
           <h2 class="features__title">Особливості</h2>
           <ul class="feature-list">
@@ -119,15 +119,16 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Чим ми займаємося -->
-      <!-- <section class="section-work">
+      <section class="section-work">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-list__item">
               <img
-                src="./images/notepad_with_hands_over_keyboard.jpg"
+                srcset="./images/work/img-1.jpg 1x, ./images/work/img-1@2x.jpg 2x"
+                src="./images/work/img-1.jpg"
                 alt="нетбук з руками над клавіатурою"
                 width="370"
               />
@@ -137,7 +138,8 @@
             </li>
             <li class="work-list__item">
               <img
-                src="./images/notebook_hands_with_phone.jpg"
+                srcset="./images/work/img-2.jpg 1x, ./images/work/img-2@2x.jpg 2x"
+                src="./images/work/img-2.jpg"
                 alt="ноутбук та руки з телефоном"
                 width="370"
               />
@@ -147,7 +149,8 @@
             </li>
             <li class="work-list__item">
               <img
-                src="./images/hands_holding_a_tablet.jpg"
+                srcset="./images/work/img-3.jpg 1x, ./images/work/img-3@2x.jpg 2x"
+                src="./images/work/img-3.jpg"
                 alt="руки тримають планшет"
                 width="370"
               />
@@ -157,14 +160,28 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Наша команда -->
-      <!-- <section class="section-team">
+      <section class="section-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img src="./images/Igor_Demyanenko.jpg" alt="фото Ігоря Дем'яненко" width="270" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-1_ld.jpg 1x, ./images/team/img-1_ld@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-1_md.jpg 1x, ./images/team/img-1_md@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-1_sm.jpg 1x, ./images/team/img-1_sm@2x.jpg 2x"
+                />
+                <img src="./images/team/img-1_sm.jpg" alt="фото Ігоря Дем'яненко" />
+              </picture>
               <div class="team-member">
                 <h3 class="team-member__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-member__position">Product Designer</p>
@@ -201,7 +218,22 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/Olga_Repina.jpg" alt="фото Ольги Рєпіної" width="270" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-2_ld.jpg 1x, ./images/team/img-2_ld@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-2_md.jpg x, ./images/team/img-2_md@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-2_sm.jpg 1x, ./images/team/img-2_sm@2x.jpg 2x"
+                />
+                <img src="./images/team/img-2_sm.jpg" alt="фото Ольги Рєпіної" />
+              </picture>
+
               <div class="team-member">
                 <h3 class="team-member__name">Ольга Рєпіна</h3>
                 <p lang="en" class="team-member__position">Frontend Developer</p>
@@ -238,7 +270,22 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/Mukola_Tarasov.jpg" alt="фото Миколи Тарасова" width="270" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-3_ld.jpg 1x, ./images/team/img-3_ld@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-3_md.jpg x, ./images/team/img-3_md@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-3_sm.jpg 1x, ./images/team/img-3_sm@2x.jpg 2x"
+                />
+                <img src="./images/team/img-3_sm.jpg" alt="фото Миколи Тарасова" />
+              </picture>
+
               <div class="team-member">
                 <h3 class="team-member__name">Микола Тарасов</h3>
                 <p lang="en" class="team-member__position">Marketing</p>
@@ -275,7 +322,22 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/Michal_Ermakov.jpg" alt="фото Михайла Єрмакова" width="270" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-4_ld.jpg 1x, ./images/team/img-4_ld@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-4_md.jpg x, ./images/team/img-4_md@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-4_sm.jpg 1x, ./images/team/img-4_sm@2x.jpg 2x"
+                />
+                <img src="./images/team/img-4_sm.jpg" alt="фото Михайла Єрмакова" />
+              </picture>
+
               <div class="team-member">
                 <h3 class="team-member__name">Михайло Єрмаков</h3>
                 <p lang="en" class="team-member__position">UI Designer</p>
@@ -313,48 +375,48 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Клієнти -->
-      <!-- <section class="section clients">
+      <section class="section clients">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients">
-            <li>
+            <li class="clients__item">
               <a class="clients-icon" href="#">
                 <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#YA-CO"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients-icon" href="#">
                 <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#company-like-microsoft"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients-icon" href="#">
                 <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#company-round"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients-icon" href="#">
                 <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#foster-peters"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients-icon" href="#">
                 <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#brand"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients-icon" href="#">
                 <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#company-cube"></use>
@@ -363,10 +425,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container info">
         <div>
           <a href="/" class="logo logo--light footer__logo"
@@ -439,7 +501,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Мобільне меню -->
     <div class="menu-container js-menu-container" id="mobile-menu">

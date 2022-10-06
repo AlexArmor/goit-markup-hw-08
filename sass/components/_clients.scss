@@ -1,18 +1,24 @@
 /* Clients */
 .section.clients {
   background-color: var(--primary-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .clients-icon {
-  width: 170px;
-  height: 92px;
+  width: 210px;
+  height: 92;
   padding: 0;
   border: 1px solid #afb1b8;
   color: #afb1b8;
@@ -22,6 +28,16 @@
   justify-content: center;
   transition: color var(--animation-time) var(--animation-bezier),
     border-color var(--animation-time) var(--animation-bezier);
+
+  @media screen and(min-width: 768px) {
+    width: 226px;
+    height: 92;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .clients-icon:hover {
