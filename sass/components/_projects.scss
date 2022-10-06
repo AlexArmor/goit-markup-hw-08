@@ -1,4 +1,14 @@
 /* Projects-Portfolio */
+.projects {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .projects .button {
   &:hover,
   &:focus {
@@ -21,6 +31,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  flex-direction: column;
+
+  @media screen and(min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .projects-list .text {
@@ -28,20 +43,26 @@
   line-height: 1.88;
 }
 
-.projects-list .item {
+.projects-list__item {
+  display: flex;
+  flex-direction: column;
+
   flex-basis: calc((100% - 60px) / 3);
   transition: box-shadow var(--animation-time) var(--animation-bezier);
   cursor: pointer;
+
+  @media screen and(min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and(min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
-.projects-list .item:hover {
+.projects-list__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .projects-list .text-block {
@@ -49,6 +70,7 @@
   border-left: 1px solid var(--border-projects-color);
   border-right: 1px solid var(--border-projects-color);
   border-bottom: 1px solid var(--border-projects-color);
+  flex-grow: 1;
 }
 
 .project-thumb {
@@ -68,7 +90,7 @@
   transition: transform var(--animation-time) var(--animation-bezier);
 }
 
-.projects-list .item:hover .project-overlay {
+.projects-list__item:hover .project-overlay {
   transform: translateY(0);
 }
 

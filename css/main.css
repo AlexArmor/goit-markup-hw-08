@@ -465,6 +465,17 @@ ul {
 }
 
 /* Projects-Portfolio */
+.projects {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .projects .button:hover, .projects .button:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
@@ -487,6 +498,18 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .projects-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .projects-list .text {
@@ -494,7 +517,14 @@ ul {
   line-height: 1.88;
 }
 
-.projects-list .item {
+.projects-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);
   -webkit-transition: -webkit-box-shadow var(--animation-time) var(--animation-bezier);
@@ -503,15 +533,22 @@ ul {
   transition: box-shadow var(--animation-time) var(--animation-bezier), -webkit-box-shadow var(--animation-time) var(--animation-bezier);
   cursor: pointer;
 }
-
-.projects-list .item:hover {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+@media screen and (min-width: 768px) {
+  .projects-list__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-list__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
-.projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.projects-list__item:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-list .text-block {
@@ -519,6 +556,9 @@ ul {
   border-left: 1px solid var(--border-projects-color);
   border-right: 1px solid var(--border-projects-color);
   border-bottom: 1px solid var(--border-projects-color);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .project-thumb {
@@ -542,7 +582,7 @@ ul {
   transition: transform var(--animation-time) var(--animation-bezier), -webkit-transform var(--animation-time) var(--animation-bezier);
 }
 
-.projects-list .item:hover .project-overlay {
+.projects-list__item:hover .project-overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -562,14 +602,38 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  row-gap: 15px;
 }
-
-.filters-list .item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (max-width: 767px) {
+  .filters-list.list {
+    max-width: 330px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .filters-list.list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filters-list.list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters-list.list {
+    margin-bottom: 50px;
+  }
 }
 
 .projects .button {
