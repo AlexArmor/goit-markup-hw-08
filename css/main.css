@@ -181,8 +181,8 @@ ul {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/img_sm@2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img_sm@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/img_md@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img_md@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -191,6 +191,12 @@ ul {
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/img_ld.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img_ld.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/img_ld@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img_ld@2x.jpg");
   }
 }
 
@@ -281,6 +287,7 @@ ul {
   text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 10px;
+  color: #212121;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .feature-list__title {
@@ -363,6 +370,7 @@ ul {
 
 .team-member__name {
   margin-bottom: 10px;
+  color: #212121;
 }
 
 .team-member__position {
@@ -418,11 +426,14 @@ ul {
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .clients-icon {
   width: 210px;
-  height: 92;
+  height: 92px;
   padding: 0;
   border: 1px solid #afb1b8;
   color: #afb1b8;
@@ -442,13 +453,11 @@ ul {
 @media screen and (min-width: 768px) {
   .clients-icon {
     width: 226px;
-    height: 92;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients-icon {
     width: 170px;
-    height: 92px;
   }
 }
 
@@ -663,8 +672,8 @@ ul {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  width: 528px;
-  min-height: 581px;
+  max-width: 450px;
+  width: 100%;
   padding: 40px;
   background-color: var(--primary-bg-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -674,6 +683,11 @@ ul {
   transition: opacity 250ms, -webkit-transform 250ms;
   transition: transform 250ms, opacity 250ms;
   transition: transform 250ms, opacity 250ms, -webkit-transform 250ms;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .backdrop.is-hidden .modal {
